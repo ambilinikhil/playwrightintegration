@@ -14,7 +14,8 @@ test('JavaScript Alerts', async ({ page }) => {
   await expect(page.locator('#result')).toContainText('You clicked: Cancel');
   
   // Handle JS Prompt
-  page.once('dialog', dialog => dialog.accept('Test Message'));
+  page.once('dialog', dialog => dialog.accept('Test Message are Displaying'));
   await page.click('button:has-text("Click for JS Prompt")');
   await expect(page.locator('#result')).toContainText('You entered: Test Message');
+
 });
