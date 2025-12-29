@@ -8,8 +8,9 @@ video: 'retain-on-failure',
 },
 reporter: [
     ['list'],
-    ['html', { outputFolder: 'html-report', open: 'always' }],
+    ['html', { outputFolder: 'playwright-report', open: 'always' }],
   ],
 });
 //reporter: [['list'], ['html', { outputFolder: 'test-results/html-report' }]],
+
 //});
