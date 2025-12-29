@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Add/Remove Elements', async ({ page }) => {
+test('Add/Remove Element', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/add_remove_elements/');
   
   // Add elements
@@ -14,4 +14,5 @@ test('Add/Remove Elements', async ({ page }) => {
   // Remove elements
   await deleteButtons.first().click();
   await expect(deleteButtons).toHaveCount(1);
+
 });
